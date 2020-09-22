@@ -119,5 +119,4 @@ public class DijkstrasBusiness {
     csvWriter.close();
   }
 
-
 }
