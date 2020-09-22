@@ -2,8 +2,8 @@ package com.dijkstras_algorithm.model;
 
 public class Request {
 
-  private String origin;
-  private String destiny;
+  private final String origin;
+  private final String destiny;
 
   public Request(String origin, String destiny) {
     this.origin = origin;

@@ -3,8 +3,8 @@ package com.dijkstras_algorithm.model;
 import java.util.List;
 
 public class Node {
-  private String node;
-  private List<Neighbors> neighbors;
+  private final String node;
+  private final List<Neighbors> neighbors;
 
   public Node(String node, List<Neighbors> neighbors) {
     this.node = node;
@@ -13,8 +13,8 @@ public class Node {
 
   public static class Neighbors{
 
-   private String node;
-   private Integer cost;
+   private final String node;
+   private final Integer cost;
 
     public Neighbors(String node, Integer cost) {
       this.node = node;

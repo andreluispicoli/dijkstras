@@ -2,9 +2,9 @@ package com.dijkstras_algorithm.model;
 
 public class NewRoute {
 
-  private String origin;
-  private String destiny;
-  private Integer cost;
+  private final String origin;
+  private final String destiny;
+  private final Integer cost;
 
   public NewRoute(String origin, String destiny, Integer cost) {
     this.origin = origin;

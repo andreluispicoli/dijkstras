@@ -30,7 +30,7 @@ class GraphFeederTest {
     var file = new File(path);
     file.createNewFile();
 
-    EmptyFileException emptyFileException = assertThrows(EmptyFileException.class, () -> {
+    assertThrows(EmptyFileException.class, () -> {
       GraphFeeder.fillMatrixByFile(GraphFeeder.getPath("src/main/resources/input-file-empty.txt"));
     });
 
@@ -39,8 +39,8 @@ class GraphFeederTest {
 
   @Test
   @DisplayName("should return File Not Found Exception")
-  void shouldReturnFileNotFoundException() throws IOException {
-    FileNotFoundException emptyFileException = assertThrows(FileNotFoundException.class, () -> {
+  void shouldReturnFileNotFoundException() {
+    assertThrows(FileNotFoundException.class, () -> {
       GraphFeeder.fillMatrixByFile(GraphFeeder.getPath("src/main/resources/input-file-emptya.txt"));
     });
   }

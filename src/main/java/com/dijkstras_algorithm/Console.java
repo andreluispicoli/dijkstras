@@ -26,8 +26,8 @@ public class Console {
 
     var response = business.DijkstrasAlgorithm(
         graph,
-        new Node(origin, new ArrayList<Node.Neighbors>()),
-        new Node(destiny, new ArrayList<Node.Neighbors>())
+        new Node(origin, new ArrayList<>()),
+        new Node(destiny, new ArrayList<>())
     );
     System.out.println("Best route: "+response.getPayload().getPath()+" > "+response.getPayload().getCost());
   }

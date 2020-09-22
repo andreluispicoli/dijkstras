@@ -4,7 +4,7 @@ import org.springframework.lang.NonNull;
 
 public class Response {
 
-  private String message;
+  private final String message;
 
   private Payload payload;
 
@@ -19,10 +19,10 @@ public class Response {
 
   public static class Payload{
     @NonNull
-    private String path;
+    private final String path;
 
     @NonNull
-    private Integer cost;
+    private final Integer cost;
 
     public Payload(@NonNull String path, @NonNull Integer cost) {
       this.path = path;

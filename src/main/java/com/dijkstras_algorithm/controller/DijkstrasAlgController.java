@@ -25,13 +25,11 @@ public class DijkstrasAlgController {
 
     Graph graph = GraphFeeder.fillMatrixByFile(GraphFeeder.getPath("src/main/resources/input-file.txt"));
 
-    var response = business.DijkstrasAlgorithm(
+    return business.DijkstrasAlgorithm(
         graph,
-        new Node(request.getOrigin(), new ArrayList<Node.Neighbors>()),
-        new Node(request.getDestiny(), new ArrayList<Node.Neighbors>())
+        new Node(request.getOrigin(), new ArrayList<>()),
+        new Node(request.getDestiny(), new ArrayList<>())
     );
-
-    return response;
   }
 
   @PostMapping("/newRoute")
