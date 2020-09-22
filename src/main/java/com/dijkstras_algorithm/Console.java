@@ -1,7 +1,9 @@
 package com.dijkstras_algorithm;
 
 import com.dijkstras_algorithm.business.DijkstrasBusiness;
+import com.dijkstras_algorithm.model.Graph;
 import com.dijkstras_algorithm.model.Node;
+import com.dijkstras_algorithm.util.GraphFeeder;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -20,7 +22,10 @@ public class Console {
 
     var business = new DijkstrasBusiness();
 
+    Graph graph = GraphFeeder.fillMatrixByFile(GraphFeeder.getPath("src/main/resources/input-file.txt"));
+
     var response = business.DijkstrasAlgorithm(
+        graph,
         new Node(origin, new ArrayList<Node.Neighbors>()),
         new Node(destiny, new ArrayList<Node.Neighbors>())
     );

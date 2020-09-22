@@ -1,1 +1,2 @@
-/home/andre-picoli/workspace/dijkstras_algorithm_test/src/test/java/com/dijkstras_algorithm/DijkstrasAlgorithmApplicationTests.java
+/home/andre-picoli/workspace/dijkstras/src/test/java/com/dijkstras_algorithm/business/DijkstrasBusinessTest.java
+/home/andre-picoli/workspace/dijkstras/src/test/java/com/dijkstras_algorithm/util/GraphFeederTest.java
